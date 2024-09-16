@@ -94,7 +94,7 @@ section .placeholderSection{
 
 .hero {
 
-    background-image: url('/assets/Hero_Stock-People.jpeg');
+    background-image: url('/images/Hero_Stock-People.jpeg');
     height: 500px; /* Full viewport height */
     width: 100%;
 
