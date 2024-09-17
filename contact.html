@@ -1,31 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
-    <link rel="stylesheet" href="./assets/contact.css" />
-</head>
-<body>
-    <form id="contact-form" method="POST" action="sendmail.php">
-        <div class="form-row form-error" style="display:none;"></div>
-        <div class="form-row">
-          <label for="contact-form-name">Name:</label>
-          <input id="contact-form-name" class="form-input" type="text" name="name" required>
-        </div>
-        <div class="form-row">
-          <label for="contact-form-email">Email:</label>
-          <input id="contact-form-email" class="form-input" type="email" name="email" required>
-        </div>
-        <div class="form-row">
-          <label for="contact-form-phone">Phone:</label>
-          <input id="contact-form-phone" class="form-input" type="tel" name="phone">
-        </div>
-        <div class="form-row">
-          <label for="contact-form-message">Message:</label>
-          <textarea id="contact-form-message" class="form-input" name="message" required></textarea>
-        </div>
-        <button type="submit">Submit</button>
-      </form>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Contact</title>
+		<link rel="stylesheet" href="./assets/contact.css" />
+	</head>
+	<body>
+		<header>
+			<a class="homeLogo" href="index.html" title="Return to home">
+				<img
+					src="./assets/logo/originalLogoClean-White.png"
+					alt="Logo"
+					height="55px"
+					width="auto" />
+			</a>
+			<nav>
+				<ul class="navLinks">
+					<li><a href="#">ABOUT</a></li>
+					<li><a href="#">REPAIRS</a></li>
+					<li><a href="gallery.html">GALLERY</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<form id="contact-form" method="POST" action="sendmail.php">
+				<div class="form-row form-error" style="display: none"></div>
+				<div class="form-row">
+					<label for="contact-form-name">Name:</label>
+					<input
+						id="contact-form-name"
+						class="form-input"
+						type="text"
+						name="name"
+						required />
+				</div>
+				<div class="form-row">
+					<label for="contact-form-email">Email:</label>
+					<input
+						id="contact-form-email"
+						class="form-input"
+						type="email"
+						name="email"
+						required />
+				</div>
+				<div class="form-row">
+					<label for="contact-form-phone">Phone:</label>
+					<input id="contact-form-phone" class="form-input" type="tel" name="phone" />
+				</div>
+				<div class="form-row">
+					<label for="contact-form-message">Message:</label>
+					<textarea
+						id="contact-form-message"
+						class="form-input"
+						name="message"
+						required></textarea>
+				</div>
+				<button type="submit">Submit</button>
+			</form>
+
+            <section class="placeholderSection">
+				<h1>Placeholder - Lorem ipsum</h1>
+			</section>
+
+
+		</main>
+	</body>
 </html>

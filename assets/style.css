@@ -1,51 +1,7 @@
 /* ---------- Document Normalize and Structure ---------- */
 
 @import "node_modules/modern-normalize/modern-normalize.css";
-
-html {
-	outline: auto black;
-	background-color: rgb(235, 235, 235);
-
-	/* --- Variables --- */
-	font-family: "Open Sans", sans-serif;
-	--normalFontSize: 24px;
-
-	--darkBlue: rgb(35, 35, 59);
-
-    --heroHeight: 80vh;
-	/*--bgColor:;
-    --secondaryBgColor:;
-    --navColor:;
-    --primaryColor:;
-    --secondaryColor:;
-    --tertiaryColor:;
-    --primaryShadow:; 
-    --transition:; */
-}
-
-header {
-	/* outline: auto red; */
-}
-
-main {
-	outline: auto blue;
-}
-
-footer {
-	outline: auto green;
-}
-
-ol,
-ul {
-	list-style: none;
-	padding-inline: 0;
-}
-
-img {
-	display: block;
-	max-inline-size: 100%;
-}
-
+@import "/assets/structureStyle.css";
 
 /* ---------- Hero Image  ---------- */
 
@@ -73,58 +29,6 @@ img {
     z-index: 1;
 }
 
-/* ---------- Header and Navigation ---------- */
-
-header {
-	position: sticky;
-	top: 25px;
-	margin: 0px 2rem 2rem 2rem;
-	z-index: 10;
-    background-color: rgba(35, 35, 50, 0.5);
-	backdrop-filter: blur(10px);
-	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-	text-align: center;
-	border-radius: 20px;
-    outline:solid 2px rgba(255,255,255,0.2);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-nav {
-	display: flex;
-    align-items:center;
-    text-align: center;
-    padding: 0.8rem;
-    border-radius: 20px;
-    color: white;
-}
-
-.navLinks {
-	font-size: 20px;
-    font-weight: 600;
-	display: flex;
-	list-style:none;
-    
-    letter-spacing: 1px;
-	gap: 30px;
-    justify-content: center;
-}
-
-.navLinks a{
-	text-decoration: none;
-    text-underline-offset: 3px;
-    text-decoration-thickness: 1px;
-	color: white;
-}
-
-.homeLogo {
-    position: absolute;
-    left: 30px;
-    display: flex;
-    align-items: center;
-}
-
 /* ---------- Hero Container  ---------- */
 
 section.hero {
@@ -133,7 +37,7 @@ section.hero {
 
 .heroContainer {
 	position: relative;
-	margin-top: -125px;
+	margin-top: -128px;
 	height: var(--heroHeight);
 	width: 100%;
 	background-color: transparent;
@@ -153,22 +57,38 @@ section.hero {
     z-index: 11;
     /* word-wrap: normal; */
     text-align: left;
+    width: fit-content;
     
 }
 
 /* ---------- Main Content ---------- */
 
 main {
-	padding: 2rem;
+    padding: 2rem;
 }
 
-section {
-	padding: 0.5rem;
+.overview {
+    background-color: white;
+    border-radius: 5px;
+}
+
+.overview *{
+    outline: auto lightpink;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.overview h2 {
+    position: relative;
+
+    font-size: 3rem;
+    width: fit-content;
+    outline: auto lightpink;
 }
 
 .placeholderSection {
 	outline: auto lightblue;
-	height: 2000px;
+	height: 500px;
 }
 
 /* ---------- Footer ---------- */
