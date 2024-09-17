@@ -7,12 +7,12 @@ html {
 	background-color: rgb(235, 235, 235);
 
 	/* --- Variables --- */
-	font-family: "Times New Roman", Times, serif;
+	font-family: "Open Sans", sans-serif;
 	--normalFontSize: 24px;
 
 	--darkBlue: rgb(35, 35, 59);
 
-    --heroHeight: 550px;
+    --heroHeight: 80vh;
 	/*--bgColor:;
     --secondaryBgColor:;
     --navColor:;
@@ -78,38 +78,51 @@ img {
 header {
 	position: sticky;
 	top: 25px;
-	margin: 0px 40px 40px 40px;
+	margin: 0px 2rem 2rem 2rem;
 	z-index: 10;
-    background-color: rgba(35, 35, 59, 0.8);
-	backdrop-filter: blur(5px);
+    background-color: rgba(35, 35, 50, 0.5);
+	backdrop-filter: blur(10px);
 	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 	text-align: center;
 	border-radius: 20px;
-    outline:solid 1px rgba(255,255,255,0.2);
+    outline:solid 2px rgba(255,255,255,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 nav {
 	display: flex;
     align-items:center;
     text-align: center;
-	padding: 0.3rem 0.3rem 0.3rem 1rem;
+    padding: 0.8rem;
     border-radius: 20px;
+    color: white;
 }
 
 .navLinks {
 	font-size: 20px;
+    font-weight: 600;
 	display: flex;
-	list-style: none;
+	list-style:none;
+    
+    letter-spacing: 1px;
 	gap: 30px;
+    justify-content: center;
 }
 
-.navLinks a {
+.navLinks a{
 	text-decoration: none;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
 	color: white;
 }
 
 .homeLogo {
-	margin-right: 110px;
+    position: absolute;
+    left: 30px;
+    display: flex;
+    align-items: center;
 }
 
 /* ---------- Hero Container  ---------- */
@@ -129,16 +142,18 @@ section.hero {
 
 .heroText {
     position: absolute;
-    font-size: larger;
-    top: 25%;
+    font-size: 2.5rem;
+    top: 15%;
     left: 5%;
-    /* transform: translate(-50%, -50%); */
+    margin:0;
+    padding: 0;
     text-align: center;
     color: white;
+    text-shadow:  0 4px 15px rgba(0, 0, 0, 0.8);
     z-index: 11;
-    width: 40%;
-    word-wrap: normal;
+    /* word-wrap: normal; */
     text-align: left;
+    
 }
 
 /* ---------- Main Content ---------- */
