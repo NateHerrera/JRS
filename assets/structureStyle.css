@@ -1,17 +1,19 @@
 /* ---------- Document Structure ---------- */
 
 html {
+    scroll-behavior: smooth;
 	outline: auto black;
 	/* background-color: rgb(235, 235, 235); */
-    background-color: rgba(188, 227, 250,0.3);
+    background-color: rgba(188, 227, 250,0.1);
 
 	/* --- Variables --- */
 	font-family: "Open Sans", sans-serif;
 	--normalFontSize: 24px;
 
 	--darkBlue: rgb(35, 35, 59);
+    --headerColor: rgba(44, 66, 104);
 
-    --heroHeight: 80vh;
+    --heroHeight: 10vh;
 	/*--bgColor:;
     --secondaryBgColor:;
     --navColor:;
@@ -53,6 +55,10 @@ ul {
 img {
 	display: block;
 	max-inline-size: 100%;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* ---------- Header and Navigation ---------- */

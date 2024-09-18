@@ -4,6 +4,25 @@
 @import "/assets/structureStyle.css";
 
 
+.galleryHero{
+    position: relative;
+    margin-top: -128px;
+    height: fit-content;
+    width: 100%;
+    padding: 4rem;
+    outline: auto red;
+}
+
+
+.heroImage{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
 
 /* --- Gallery Section --- */
 
