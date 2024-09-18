@@ -1,11 +1,31 @@
+/* ---------- Document Normalize and Structure ---------- */
+
+@import "node_modules/modern-normalize/modern-normalize.css";
+@import "/assets/structureStyle.css";
+
+/* ---------- Form ---------- */
+
+#contact-form{
+    padding: 2rem;
+}
+
 .form-row {
-    margin-bottom: 10px;
+	margin-bottom: 10px;
 }
 
 .form-input {
-    display: block;
+	display: block;
 }
 
 .form-error {
-    color: red;
+	color: red;
+}
+
+
+/* ---------- Placeholder Sections ---------- */
+
+.placeholderSection {
+	outline: auto lightblue;
+	height: 500px;
+    padding: 2rem;
 }

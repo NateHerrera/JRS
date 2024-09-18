@@ -1,37 +1,17 @@
+/* ---------- Document Normalize and Structure ---------- */
+
 @import "node_modules/modern-normalize/modern-normalize.css";
-
-html {
-    outline: auto black;
-    background-color: white;
-    font-family: 'Times New Roman', Times, serif;
-    --normalFontSize: 24px;
-}
-
-header {
-    color: white;
-    background-color: #2b2c55;
-    padding: 40px 20px; 
-    text-align: center; 
-    font-size: 48px;
-    font-weight: bold;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 10px rgba(35, 35, 59, 0.2);
-}
+@import "/assets/structureStyle.css";
 
 
-main {
-    margin: 20px;
-    outline: auto blue;
-}
 
 /* --- Gallery Section --- */
+
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
     gap: 20px;
-    padding: 20px;
+    margin: 2rem;
     overflow-x: auto;
 }
 
