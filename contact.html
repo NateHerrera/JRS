@@ -65,13 +65,14 @@
               />
             </div>
             <div class="form-row">
-              <label for="contact-form-company">Company:</label>
+              <label for="contact-form-company">Company*:</label>
               <input
                 id="contact-form-company"
                 class="form-input"
                 type="text"
                 name="company"
                 placeholder="John Smith Inc."
+				required
               />
             </div>
             <div class="form-row">
@@ -105,6 +106,16 @@
                 placeholder="555-555-5555"
               />
             </div>
+			<div class="form-row">
+				<label for="contact-form-phone">Containment Dimension:</label>
+				<input
+				  id="contact-form-containment"
+				  class="form-input"
+				  type="text"
+				  name="Containment"
+				  placeholder="100'L 50'W 36''H"
+				/>
+			  </div>
             <div class="form-row">
               <label for="contact-form-message">Message*:</label>
               <textarea
@@ -119,10 +130,27 @@
           </form>
         </div>
 
-        <div class="map-container">
-          <h2>Our Location</h2>
-          <p>We proudly serve the following areas:</p>
-          <img src="./images/JRSmap.png" alt="Service Area Map" />
+        <!-- Contact Cards and Map Section -->
+        <div class="contact-cards-container">
+          <h2>Reach Out To Us Personally</h2>
+          <div class="contact-card">
+            <h3>Jimmy Herrera</h3>
+            <p></p>
+            <p>Email: hjimmy04@gmail.com</p>
+            <p>Phone: 210-442-7358</p>
+          </div>
+          <div class="contact-card">
+            <h3>Jaime Bautista</h3>
+            <p></p>
+            <p>Email: bautistajam41@yahoo.com</p>
+            <p>Phone: 817-291-4224</p>
+          </div>
+
+          <!-- Map added under the contact cards -->
+          <div class="map-container">
+            <h2>Areas We Serve</h2>
+            <img src="./images/JRSmap.png" alt="Service Area Map" />
+          </div>
         </div>
       </div>
     </main>
