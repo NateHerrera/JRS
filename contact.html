@@ -1,162 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us | JRS Repairs</title>
-    <link rel="stylesheet" href="./assets/contact.css" />
-  </head>
-  <body>
-    <header>
-      <a class="homeLogo" href="index.html" title="Return to home">
-        <img
-          src="./assets/logo/originalLogoClean-White.png"
-          alt="Logo"
-          height="55px"
-          width="auto"
-        />
-      </a>
-      <nav>
-        <ul class="navLinks">
-          <li><a href="index.html">ABOUT</a></li>
-          <li><a href="index.html">REPAIRS</a></li>
-          <li><a href="gallery.html">GALLERY</a></li>
-          <li><a href="contact.html">CONTACT</a></li>
-        </ul>
-      </nav>
-    </header>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Contact - JRS Repairs</title>
+		<link rel="stylesheet" href="./assets/contact.css" />
+	</head>
+	<body>
+		<header class="glossy">
+			<a class="homeLogo" href="index.html" title="Return to home">
+				<img
+					src="./assets/logo/originalLogoClean-White.png"
+					alt="Logo"
+					height="55px"
+					width="auto" />
+			</a>
+			<nav>
+				<ul class="navLinks">
+					<li><a href="index.html">ABOUT</a></li>
+					<li><a href="index.html">REPAIRS</a></li>
+					<li><a href="gallery.html">GALLERY</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+			</nav>
+		</header>
 
-    <section class="galleryHero">
-      <div class="overlay">
-        <h1>Contact Us</h1>
-        <p>We are here to assist you with all your repair needs.</p>
-      </div>
-      <img
-        class="heroImage"
-        src="/images/AdobeStock_766172235.jpeg"
-        alt="Gallery Hero Image"
-      />
-    </section>
+		<section class="galleryHero">
+			<div class="overlay">
+				<h1>Contact Us</h1>
+				<p>We are here to assist you with all your repair needs.</p>
+			</div>
+			<img
+				class="heroImage"
+				src="/images/AdobeStock_766172235.jpeg"
+				alt="Gallery Hero Image" />
+		</section>
 
-    <main>
-      <div class="contact-container">
-        <div class="form-container">
-          <h2>Get In Touch</h2>
-          <p>Fields marked with * are required.</p>
-          <form
-            id="contact-form"
-            action="https://api.web3forms.com/submit"
-            method="POST"
-          >
-            <input
-              type="hidden"
-              name="access_key"
-              value="46c4de96-bb35-47ad-9a1f-c5c700056276"
-            />
-            <div class="form-row">
-              <label for="contact-form-name">Name*:</label>
-              <input
-                id="contact-form-name"
-                class="form-input"
-                type="text"
-                name="name"
-                placeholder="John Smith"
-                required
-              />
-            </div>
-            <div class="form-row">
-              <label for="contact-form-company">Company*:</label>
-              <input
-                id="contact-form-company"
-                class="form-input"
-                type="text"
-                name="company"
-                placeholder="John Smith Inc."
-				required
-              />
-            </div>
-            <div class="form-row">
-              <label for="contact-form-email">Email*:</label>
-              <input
-                id="contact-form-email"
-                class="form-input"
-                type="email"
-                name="email"
-                placeholder="JohnSmith12@gmail.com"
-                required
-              />
-            </div>
-            <div class="form-row">
-              <label for="contact-form-state/zip">State/Zip:</label>
-              <input
-                id="contact-form-state/zip"
-                class="form-input"
-                type="text"
-                name="state/zip"
-                placeholder="Texas 78223"
-              />
-            </div>
-            <div class="form-row">
-              <label for="contact-form-phone">Phone:</label>
-              <input
-                id="contact-form-phone"
-                class="form-input"
-                type="tel"
-                name="phone"
-                placeholder="555-555-5555"
-              />
-            </div>
-			<div class="form-row">
-				<label for="contact-form-phone">Containment Dimension:</label>
-				<input
-				  id="contact-form-containment"
-				  class="form-input"
-				  type="text"
-				  name="Containment"
-				  placeholder="100'L 50'W 36''H"
-				/>
-			  </div>
-            <div class="form-row">
-              <label for="contact-form-message">Message*:</label>
-              <textarea
-                id="contact-form-message"
-                class="form-input"
-                name="message"
-                placeholder="What would you like to inquire about?"
-                required
-              ></textarea>
-            </div>
-            <button type="submit">Submit</button>
-          </form>
-        </div>
+		<main>
+			<div class="contact-container">
+				<div class="form-container">
+					<h2>Get In Touch</h2>
+					<p>Fields marked with * are required.</p>
+					<form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+						<input
+							type="hidden"
+							name="access_key"
+							value="46c4de96-bb35-47ad-9a1f-c5c700056276" />
+						<div class="form-row">
+							<label for="contact-form-name">Name*:</label>
+							<input
+								id="contact-form-name"
+								class="form-input"
+								type="text"
+								name="name"
+								placeholder="John Smith"
+								required />
+						</div>
+						<div class="form-row">
+							<label for="contact-form-company">Company*:</label>
+							<input
+								id="contact-form-company"
+								class="form-input"
+								type="text"
+								name="company"
+								placeholder="John Smith Inc."
+								required />
+						</div>
+						<div class="form-row">
+							<label for="contact-form-email">Email*:</label>
+							<input
+								id="contact-form-email"
+								class="form-input"
+								type="email"
+								name="email"
+								placeholder="JohnSmith12@gmail.com"
+								required />
+						</div>
+						<div class="form-row">
+							<label for="contact-form-state/zip">State/Zip:</label>
+							<input
+								id="contact-form-state/zip"
+								class="form-input"
+								type="text"
+								name="state/zip"
+								placeholder="Texas 78223" />
+						</div>
+						<div class="form-row">
+							<label for="contact-form-phone">Phone:</label>
+							<input
+								id="contact-form-phone"
+								class="form-input"
+								type="tel"
+								name="phone"
+								placeholder="555-555-5555" />
+						</div>
+						<div class="form-row">
+							<label for="contact-form-phone">Containment Dimension:</label>
+							<input
+								id="contact-form-containment"
+								class="form-input"
+								type="text"
+								name="Containment"
+								placeholder="100'L 50'W 36''H" />
+						</div>
+						<div class="form-row">
+							<label for="contact-form-message">Message*:</label>
+							<textarea
+								id="contact-form-message"
+								class="form-input"
+								name="message"
+								placeholder="What would you like to inquire about?"
+								required></textarea>
+						</div>
+						<button type="submit">Submit</button>
+					</form>
+				</div>
 
-        <!-- Contact Cards and Map Section -->
-        <div class="contact-cards-container">
-          <h2>Reach Out To Us Personally</h2>
-          <div class="contact-card">
-            <h3>Jimmy Herrera</h3>
-            <p></p>
-            <p>Email: hjimmy04@gmail.com</p>
-            <p>Phone: 210-442-7358</p>
-          </div>
-          <div class="contact-card">
-            <h3>Jaime Bautista</h3>
-            <p></p>
-            <p>Email: bautistajam41@yahoo.com</p>
-            <p>Phone: 817-291-4224</p>
-          </div>
+				<!-- Contact Cards and Map Section -->
+				<div class="contact-cards-container">
+					<h2>Reach Out To Us Personally</h2>
+					<div class="contact-card">
+						<h3>Jimmy Herrera</h3>
+						<p></p>
+						<p>Email: hjimmy04@gmail.com</p>
+						<p>Phone: 210-442-7358</p>
+					</div>
+					<div class="contact-card">
+						<h3>Jaime Bautista</h3>
+						<p></p>
+						<p>Email: bautistajam41@yahoo.com</p>
+						<p>Phone: 817-291-4224</p>
+					</div>
 
-          <!-- Map added under the contact cards -->
-          <div class="map-container">
-            <h2>Areas We Serve</h2>
-            <img src="./images/JRSmap.png" alt="Service Area Map" />
-          </div>
-        </div>
-      </div>
-    </main>
+					<!-- Map added under the contact cards -->
+					<div class="map-container">
+						<h2>Areas We Serve</h2>
+						<img src="./images/JRSmap.png" alt="Service Area Map" />
+					</div>
+				</div>
+			</div>
+		</main>
 
-    <footer>
-      <p>&copy; 2024</p>
-    </footer>
-  </body>
+		<footer>
+			<p>&copy; 2024</p>
+		</footer>
+	</body>
 </html>

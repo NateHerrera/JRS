@@ -1,7 +1,7 @@
 /* ---------- Document Structure ---------- */
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior:smooth;
 	outline: auto black;
 	/* background-color: rgb(235, 235, 235); */
     background-color: rgba(188, 227, 250,0.1);
@@ -30,11 +30,12 @@ header {
 
 main {
     /* padding: 2rem; */
-	outline: auto blue;
+	/* outline: auto blue; */
 }
 
 section,
 form {
+    /* outline: auto purple; */
 	padding: 0.5rem;
 }
 
@@ -42,7 +43,13 @@ footer {
 	outline: auto green;
 }
 
+h1 {
+    margin: 0;
+}
+
 h2{
+    /* outline: auto red; */
+    margin: 0;
     color: rgb(35, 35, 59);
 }
 
@@ -61,6 +68,14 @@ a {
     text-decoration: none;
 }
 
+.glossy {
+    background-color: rgba(35, 35, 50, 0.5);
+	backdrop-filter: blur(10px);
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    /* outline:solid 2px rgba(255,255,255,0.2); */
+}
+
 /* ---------- Header and Navigation ---------- */
 
 header {
@@ -68,12 +83,7 @@ header {
 	top: 25px;
 	margin: 0px 2rem 2rem 2rem;
 	z-index: 10;
-    background-color: rgba(35, 35, 50, 0.5);
-	backdrop-filter: blur(10px);
-	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 	text-align: center;
-	border-radius: 20px;
-    outline:solid 2px rgba(255,255,255,0.2);
     display: flex;
     align-items: center;
     justify-content: center;
