@@ -11,6 +11,7 @@ html {
 	--normalFontSize: 24px;
 
 	--darkBlue: rgb(35, 35, 59);
+    --lightBlue: rgb(76,104,171);
     --headerColor: rgba(44, 66, 104);
 
     --heroHeight: 10vh;
@@ -39,9 +40,6 @@ form {
 	padding: 0.5rem;
 }
 
-footer {
-	outline: auto green;
-}
 
 h1 {
     margin: 0;
@@ -62,6 +60,10 @@ ul {
 img {
 	display: block;
 	max-inline-size: 100%;
+}
+
+button {
+    cursor: pointer;
 }
 
 a {
@@ -121,4 +123,49 @@ nav {
     left: 30px;
     display: flex;
     align-items: center;
+}
+
+/* ---------- Footer ---------- */
+
+footer {
+	padding: 1rem;
+	font-size: 1rem;
+	letter-spacing: 0.05rem;
+    background-color: var(--darkBlue);
+}
+
+.footerTop {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+}
+
+footer p {
+    color: white;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 1rem;
+}
+
+
+.footerButton {
+	padding: 0.5rem 1rem;
+	border-radius: 5px;
+	width: 10%;
+	font-size: 1rem;
+	text-align: center;
+	text-decoration: none;
+    border: 1px solid var(--lightBlue);
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.footerButton:link {
+    color: white;
+}
+
+.footerButton:visited {
+	color: var(--headerColor);
 }

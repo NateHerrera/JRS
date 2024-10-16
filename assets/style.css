@@ -114,22 +114,35 @@ main {
 /* >>>> --------- Overview ---------- */
 
 #Overview {
-	scroll-margin-top: 160px;
+	scroll-margin-top: 155px;
 }
 
-.overview {
+.overviewSection {
 	background-color: white;
 	border-radius: 5px;
 	display: flex;
+    flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	/* outline: auto black; */
+	outline: auto black;
 	height: fit-content;
 	padding: 0;
 }
 
+.newOverviewSect {
+    outline: auto red;
+    display: flex;
+    /* flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    outline: auto black;
+    height: fit-content;
+    padding: 0; */
+}
+
 .overviewText,
 .overviewImage {
+    /* outline: auto blueviolet; */
 	margin: 2rem;
 	width: 50%;
 	height: fit-content;
@@ -152,14 +165,19 @@ main {
 	display: flex;
 	gap: 2rem;
 	width: 100%;
+    /* padding: 0.5rem 1rem; */
 }
 
 .overGalleryButton,
 .overLearnButton {
-	padding: 0.5rem 1rem;
+	/* padding: 0.5rem 1rem; */
 	border-radius: 5px;
 	width: 30%;
+    height: 2.5rem;
 	font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 	text-align: center;
 	text-decoration: none;
 	/* cursor: pointer; */
@@ -167,11 +185,11 @@ main {
 
 .overGalleryButton {
 	background-color: rgba(235, 235, 235, 0.4);
-	border-color: var(--headerColor);
+    border: 1px solid var(--darkBlue);
+	/* border-color: black; */
 }
 .overLearnButton {
-	background-color: var(--headerColor);
-	border: none;
+	background-color: var(--lightBlue);
 }
 .overGalleryButton:link,
 .overGalleryButton:visited {
@@ -199,19 +217,5 @@ main {
 
 .placeholderSection {
 	outline: auto lightblue;
-	height: 500px;
-}
-
-/* ---------- Footer ---------- */
-
-footer {
-	padding: 1rem;
-	text-align: center;
-	font-size: 0.8rem;
-	letter-spacing: 0.05rem;
-}
-
-footer p {
-	outline: auto lightgreen;
-	padding: 0.5rem;
+	height: 300px;
 }
