@@ -38,6 +38,35 @@
 .heroImage {
 	width: 100%;
 	height: 100%;
+    object-fit: cover;
+}
+
+.heroImage.vertical {
+    display: none; /* Hide the vertical image by default */
+}
+
+/* For smaller screens */
+@media only screen and (max-width: 768px) {
+    .heroImage {
+        display: none; /* Hide the horizontal image */
+    }
+
+    .heroImage.vertical {
+        display: block;
+        width: 100%;
+        height: 100vh;
+        object-fit: cover; /* Ensure the image covers the area */
+    }
+
+    /* Adjust the hero text size and positioning */
+    .heroText h1 {
+        font-size: 2.5rem;
+    }
+
+    .heroLearnMoreBtn {
+        font-size: 1.5rem;
+        top: 40%; /* Adjust button position */
+    }
 }
 
 /* ---------- Hero Container, Text, and Button ---------- */
@@ -105,47 +134,58 @@ section.heroSection {
 	color: white;
 }
 
+
+
 /* ---------- Main Content ---------- */
 
 main {
 	padding: 2rem;
 }
 
-/* >>>> --------- Overview ---------- */
+/* >>>> --------- About Section ---------- */
 
-#Overview {
+.aboutSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 5px;
+    padding: 2rem;
+}
+
+/* >>>> --------- Repair Section ---------- */
+
+#About,
+#Repairs {
 	scroll-margin-top: 155px;
 }
 
-.overviewSection {
+.repairSection {
 	background-color: white;
 	border-radius: 5px;
 	display: flex;
     flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	outline: auto black;
 	height: fit-content;
 	padding: 0;
 }
 
-.newOverviewSect {
-    outline: auto red;
+.newRepairSect {
+    /* outline: auto red; */
     display: flex;
-    /* flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    outline: auto black;
-    height: fit-content;
-    padding: 0; */
+    flex-direction: row;
+    width: 100%;
+    /* outline: auto black; */
 }
 
-.overviewText,
-.overviewImage {
+.repairText,
+.repairImage {
     /* outline: auto blueviolet; */
 	margin: 2rem;
 	width: 50%;
-	height: fit-content;
+	height: auto;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
@@ -153,23 +193,34 @@ main {
 	gap: 2rem;
 }
 
-.overviewText * {
+.repairImage {
+    /* outline: auto blue; */
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+/* .repairImage img {
+    padding: 2rem;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+} */
+
+.repairText * {
 	margin: 0;
 }
 
-.overviewImage {
-	flex-direction: row;
-}
-
-.overviewButtons {
+.repairButtons {
 	display: flex;
 	gap: 2rem;
 	width: 100%;
     /* padding: 0.5rem 1rem; */
 }
 
-.overGalleryButton,
-.overLearnButton {
+.repairGalleryButton,
+.repairLearnButton {
 	/* padding: 0.5rem 1rem; */
 	border-radius: 5px;
 	width: 30%;
@@ -183,39 +234,225 @@ main {
 	/* cursor: pointer; */
 }
 
-.overGalleryButton {
+.repairGalleryButton {
 	background-color: rgba(235, 235, 235, 0.4);
     border: 1px solid var(--darkBlue);
 	/* border-color: black; */
 }
-.overLearnButton {
+.repairLearnButton {
 	background-color: var(--lightBlue);
 }
-.overGalleryButton:link,
-.overGalleryButton:visited {
+.repairGalleryButton:link,
+.repairGalleryButton:visited {
 	color: var(--headerColor);
 }
 
-.overLearnButton:link,
-.overLearnButton:visited {
+.repairLearnButton:link,
+.repairLearnButton:visited {
 	color: white;
 }
 
-.overviewImage img {
+.repairImage img {
 	width: 80%;
 	height: auto;
 	border-radius: 5px;
 }
 
-.overview h2 {
+.repairText h2 {
 	color: var(--headerColor);
-	font-size: 3rem;
 	width: fit-content;
 }
+
+@media (max-width: 768px) {
+    .newRepairSect {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .repairText, .repairImage {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+
+/* >>>> --------- Home Gallery Section ---------- */
+
+.gallerySection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--headerColor);
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 0;
+}
+
+.gallerySection h2 {
+    color: white;
+}
+
+.slideshow-container {
+    position: relative;
+    padding: 2rem;
+    /* background-color: whitesmoke; */
+    /* background-color: var(--darkBlue); */
+    width: 70%;
+    max-width: 900px;
+    height: 500px; /* Ensures the slideshow container has a consistent height */
+    overflow: hidden; /* Hides the images outside the container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slideshow {
+    display: flex;
+    transition: transform 0.5s ease; /* Smooth transition effect */
+    height: 100%;
+}
+
+.slide {
+    min-width: 100%; /* Each slide will take up 100% of the container's width */
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide img {
+    width: auto;
+    height: 100%; /* Ensures all images have the same height as the container */
+    object-fit: cover; /* Ensures the images fill the container and maintain aspect ratio */
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    z-index: 3;
+    user-select: none;
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+/* Hover effects for the arrows */
+.arrow:active {
+    user-select: none;
+}
+
+.galleryBtn {
+    margin-top: 20px;
+    text-decoration: none;
+    background-color: var(--lightBlue);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* >>>> >>>> --------- Home Gallery Media Queries ---------- */
+
+@media (max-width: 768px) {
+
+    .slideshow-container {
+        width: 90%;
+        height: 300px;
+    }
+
+    .arrow {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .slideshow-container {
+        width: 100%;
+        height: 250px;
+    }
+}
+
 
 /* >>>> --------- Placeholder Section ---------- */
 
 .placeholderSection {
 	outline: auto lightblue;
 	height: 300px;
+}
+
+/* ---------- Media Queries for Smaller Screens ---------- */
+@media (max-width: 768px) {
+
+
+    .heroText h1 {
+        font-size: 2rem;
+    }
+
+    .heroLearnMoreBtn {
+        font-size: 1.5rem;
+    }
+
+    .aboutSection, .repairSection {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .repairText, .repairImage {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 90%; /* Reduce base font size */
+    }
+
+    header {
+        padding: 0.5rem;
+    }
+
+    .navLinks a {
+        font-size: 1rem;
+    }
+
+    .heroText h1 {
+        font-size: 1.5rem;
+    }
+
+
+
+    .aboutSection, .repairSection {
+        padding: 0.5rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .repairText, .repairImage {
+        width: 100%;
+        margin: 0.5rem 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .repairButtons {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+    }
 }

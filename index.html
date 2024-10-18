@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="/assets/style.css" />
 	</head>
 	<body>
+
 		<header class="glossy">
 			<a class="homeLogo" href="index.html" title="Return to home">
 				<img
@@ -15,10 +16,19 @@
 					height="55px"
 					width="auto" />
 			</a>
+
+			<!-- Burger Icon for mobile -->
+			<div class="burgerMenu" id="burgerMenu">
+				<div class="bar"></div>
+				<div class="bar"></div>
+				<div class="bar"></div>
+			</div>
+
+			<!-- Navigation Menu -->
 			<nav>
-				<ul class="navLinks">
-					<li><a href="#Overview">ABOUT</a></li>
-					<li><a href="#">REPAIRS</a></li>
+				<ul class="navLinks" id="navLinks">
+					<li><a href="#About">ABOUT</a></li>
+					<li><a href="#Repairs">REPAIRS</a></li>
 					<li><a href="gallery.html">GALLERY</a></li>
 					<li><a href="contact.html">CONTACT</a></li>
 				</ul>
@@ -27,21 +37,54 @@
 
 		<section class="heroSection">
 			<div class="heroImageContainer">
-				<img class="heroImage" src="./images/Index-Hero-Image.png" alt="" />
+				<img
+					class="heroImage"
+					src="./images/Index-Hero-Image-Horizontal.png"
+					alt="Hero Image" />
+				<img
+					class="heroImage vertical"
+					src="./images/Index-Hero-Image-Vertical.jpg"
+					alt="Hero Image Vertical" />
 			</div>
 
 			<div class="heroText">
 				<h1 class="glossy">Secondary <br />Containment<br />Specialist</h1>
 			</div>
 
-			<a class="heroLearnMoreBtn glossy" href="#Overview">Learn More</a>
+			<a class="heroLearnMoreBtn glossy" href="#About">Learn More</a>
 		</section>
 
 		<main>
-			<section class="placeholderSection"></section>
-			<section class="overviewSection" id="Overview">
-				<div class="newOverviewSect">
-					<div class="overviewText">
+			<section class="aboutSection" id="About">
+				<div class="aboutText">
+					<h2>About Us</h2>
+					<p class="secondaryText">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mauris
+						purus, ultricies vel nunc nec, tincidunt tincidunt nunc. Donec quis nunc nec
+						nunc tincidunt tincidunt. Nullam mauris purus, ultricies vel nunc nec,
+						tincidunt tincidunt nunc. Donec quis nunc nec nunc tincidunt tincidunt.
+					</p>
+					<h2>About Our Service</h2>
+					<p>
+						In the petroleum industry, numerous underground and above-ground fuel
+						storage tanks are required by state regulations and insurance policies to
+						have secondary containment systems. A flexible membrane excavation liner is
+						often recommended due to its low cost and ability to handle ground movement,
+						which can cause rigid containers to leak. This also applies to the extensive
+						piping connected to these storage systems. In addition, the storage of
+						chemicals, fertilizers, and other hazardous substances in the industry must
+						have both primary and secondary containment systems. Polyurethane flexible
+						membrane liners are commonly used for this purpose, exceeding regulatory
+						standards. Polyurethane is highly flexible, puncture-resistant, and offers
+						excellent heat-sealing properties. It is resistant to UV degradation and
+						underground fungi, ensuring long-lasting durability for underground fuel and
+						chemical storage.
+					</p>
+				</div>
+			</section>
+			<section class="repairSection" id="Repairs">
+				<div class="newRepairSect">
+					<div class="repairText">
 						<h2>Service Header</h2>
 						<p class="secondaryText">
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mauris
@@ -50,20 +93,23 @@
 							nec, tincidunt tincidunt nunc. Donec quis nunc nec nunc tincidunt
 							tincidunt.
 						</p>
-						<div class="overviewButtons">
-							<a class="overGalleryButton" href="/gallery.html">View in Gallery</a>
-							<a class="overLearnButton" href="#">Learn More</a>
+						<div class="repairButtons">
+							<a class="repairLearnButton" href="#">Learn More</a>
 						</div>
 					</div>
-					<div class="overviewImage">
-						<img src="/images/containmentWithLogo.jpeg" alt="" />
+					<div class="repairImage">
+							<img src="/images/containmentWithLogo.jpeg" alt="" />
 					</div>
 				</div>
-				<div class="newOverviewSect">
-					<div class="overviewImage">
-						<img src="/images/containmentWithLogo.jpeg" alt="" />
+
+                <hr />
+                
+				<div class="newRepairSect">
+					<div class="repairImage">
+							<img src="/images/containmentWithLogo.jpeg" alt="" />
 					</div>
-					<div class="overviewText">
+					
+					<div class="repairText">
 						<h2>Service Header</h2>
 						<p class="secondaryText">
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mauris
@@ -72,37 +118,71 @@
 							nec, tincidunt tincidunt nunc. Donec quis nunc nec nunc tincidunt
 							tincidunt.
 						</p>
-						<div class="overviewButtons">
-							<a class="overGalleryButton" href="/gallery.html">View in Gallery</a>
-							<a class="overLearnButton" href="#">Learn More</a>
+						<div class="repairButtons">
+							<a class="repairGalleryButton" href="/gallery.html">View in Gallery</a>
+							<a class="repairLearnButton" href="#">Learn More</a>
 						</div>
 					</div>
 				</div>
 			</section>
 		</main>
+		<section class="gallerySection glossy">
+			<h2>View Some of Our Work</h2>
+			<div class="slideshow-container glossy">
+				<div class="arrow left-arrow" id="prev">&#9664;</div>
+
+				<div class="slideshow">
+					<div class="slide">
+						<img src="/images/IMG_0348.JPEG" alt="Image 1" />
+					</div>
+					<div class="slide">
+						<img src="/images/IMG_9611.JPG" alt="Image 2" />
+					</div>
+					<div class="slide">
+						<img src="/images/IMG_2581.JPG" alt="Image 3" />
+					</div>
+					<div class="slide">
+						<img src="/images/IMG_2543.JPG" alt="Image 4" />
+					</div>
+					<div class="slide">
+						<img src="/images/IMG_0167.JPG" alt="Image 5" />
+					</div>
+				</div>
+
+				<div class="arrow right-arrow" id="next">&#9654;</div>
+			</div>
+
+			<a href="gallery.html" class="galleryBtn">View Full Gallery</a>
+		</section>
 
 		<footer>
-            <div class="footerTop">
-                <img
-                src="/assets/logo/originalLogoClean-White.png"
-                alt="Logo"
-                height="100px"
-                width="auto" />
-                <div class="ContactText">
-                    <p>Jimmy Herrera</p>
-                    <p>hjimmy04@gmail.com</p>
-                    <p>210-442-7358</p>
-                </div>
-                <div class="ContactText">
-                    <p>Jaime Bautista</p>
-                    <p>bautistajam41@yahoo.com</p>
-                    <p>817-291-4224</p>
-                </div>
-                <a class="footerButton glossy" href="/contact.html">
-                    Contact Us
-                </a>
-            </div>
-            <hr />
+			<div class="footerTop">
+				<img
+					src="/assets/logo/originalLogoClean-White.png"
+					alt="Logo"
+					height="150px"
+					width="auto" />
+				<div class="footerResources">
+					<p>Resources</p>
+					<a href="#">Home</a>
+					<a href="#About">About</a>
+					<a href="#Repairs">Repairs</a>
+					<a href="gallery.html">Gallery</a>
+					<a href="contact.html">Contact</a>
+				</div>
+
+				<div class="ContactText">
+					<p>Jimmy Herrera</p>
+					<p>hjimmy04@gmail.com</p>
+					<p>210-442-7358</p>
+				</div>
+				<div class="ContactText">
+					<p>Jaime Bautista</p>
+					<p>bautistajam41@yahoo.com</p>
+					<p>817-291-4224</p>
+				</div>
+			</div>
+			<hr />
 			<div class="copyright">
 				<p>&copy;Jaime's Roustabout Service 2024. All Rights Reserved.</p>
 			</div>
