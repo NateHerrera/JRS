@@ -98,7 +98,8 @@ section.heroSection {
 
 .heroText,
 .heroLearnMoreBtn {
-	backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
 }
 
 .heroText h1 {
@@ -125,6 +126,7 @@ section.heroSection {
 	border: none;
 	/* border-color: whitesmoke; */
 	outline: solid 2px rgba(255, 255, 255, 0.4);
+    -webkit-backdrop-filter: blur(2px);
 	backdrop-filter: blur(2px);
 }
 
@@ -337,6 +339,7 @@ main {
     color: white;
     cursor: pointer;
     z-index: 3;
+    -webkit-user-select: none;
     user-select: none;
 }
 
@@ -350,13 +353,16 @@ main {
 
 /* Hover effects for the arrows */
 .arrow:active {
+    -webkit-user-select: none;
     user-select: none;
 }
 
 .galleryBtn {
+    
     margin-top: 20px;
     text-decoration: none;
-    background-color: var(--lightBlue);
+    background-color: rgba(235, 235, 235, 0.4);
+    border: 1px solid var(--darkBlue);
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
