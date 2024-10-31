@@ -47,7 +47,7 @@ h1 {
 
 h2{
     /* outline: auto red; */
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin: 0;
     color: rgb(35, 35, 59);
 }
@@ -71,6 +71,11 @@ a {
     text-decoration: none;
 }
 
+p {
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+}
+
 .glossy {
     background-color: rgba(35, 35, 50, 0.5);
     -webkit-backdrop-filter: blur(10px);
@@ -79,6 +84,18 @@ a {
     border-radius: 20px;
     /* outline:solid 2px rgba(255,255,255,0.2); */
 }
+hr {
+    border: none;              /* Remove default border styling */
+    height: 1px;                /* Adjust thickness */
+    background-color: #000;     /* Set a visible color */
+    margin: 20px 0;             /* Space above and below */
+    width: 100%;                /* Ensure it spans the full width */
+}
+
+hr.repairBreak {
+    width: 80%;
+}
+
 
 /* ---------- Header and Navigation ---------- */
 

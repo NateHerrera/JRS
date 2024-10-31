@@ -144,6 +144,10 @@ main {
 	padding: 2rem;
 }
 
+h3 {
+    font-size: 1.5rem;
+}
+
 /* >>>> --------- About Section ---------- */
 
 .aboutSection {
@@ -159,11 +163,16 @@ main {
 /* >>>> --------- Repair Section ---------- */
 
 #About,
-#Repairs {
+#Services {
 	scroll-margin-top: 155px;
 }
 
-.repairSection {
+#About p,
+#Services p {
+    font-size: large;
+}
+
+.serviceSection {
 	background-color: white;
 	border-radius: 5px;
 	display: flex;
@@ -302,7 +311,7 @@ main {
     padding: 2rem;
     /* background-color: whitesmoke; */
     /* background-color: var(--darkBlue); */
-    width: 70%;
+    width: 80%;
     max-width: 900px;
     height: 500px; /* Ensures the slideshow container has a consistent height */
     overflow: hidden; /* Hides the images outside the container */
@@ -314,7 +323,7 @@ main {
 .slideshow {
     display: flex;
     transition: transform 0.5s ease; /* Smooth transition effect */
-    height: 100%;
+    height: 100%;;
 }
 
 .slide {
@@ -326,7 +335,7 @@ main {
 }
 
 .slide img {
-    width: auto;
+    width: 70%;
     height: 100%; /* Ensures all images have the same height as the container */
     object-fit: cover; /* Ensures the images fill the container and maintain aspect ratio */
 }
@@ -410,7 +419,7 @@ main {
         font-size: 1.5rem;
     }
 
-    .aboutSection, .repairSection {
+    .aboutSection, .serviceSection {
         padding: 1rem;
         text-align: center;
     }
@@ -423,17 +432,6 @@ main {
 }
 
 @media (max-width: 480px) {
-    html {
-        font-size: 90%; /* Reduce base font size */
-    }
-
-    header {
-        padding: 0.5rem;
-    }
-
-    .navLinks a {
-        font-size: 1rem;
-    }
 
     .heroText h1 {
         font-size: 1.5rem;
@@ -441,7 +439,7 @@ main {
 
 
 
-    .aboutSection, .repairSection {
+    .aboutSection, .serviceSection {
         padding: 0.5rem;
         justify-content: center;
         align-items: center;
@@ -460,5 +458,60 @@ main {
         justify-content: center;
         align-items: center;
         gap: 0.5rem;
+    }
+}
+
+
+.heroImage.vertical {
+    display: none; /* Default: hide the vertical image */
+}
+
+/* Smaller screens: Show vertical image */
+@media only screen and (max-width: 768px) {
+    .heroImage {
+        display: none; /* Hide the horizontal image */
+    }
+    .heroImage.vertical {
+        display: block;
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+    }
+
+    /* Adjust hero text and button positioning */
+    .heroText {
+        position: absolute;
+        top: 15%;
+        left: 1rem;
+        text-align: center;
+        width: 90%;
+        padding: 1.5rem;
+    }
+
+    .heroText h1 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    .heroLearnMoreBtn {
+        position: absolute;
+        top: 40%;
+        left: 33%;
+        /* transform: translateX(-50%); */
+        font-size: 1.2rem;
+        padding: 1rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /* Additional tweaks for very small screens */
+    .heroText h1 {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+    .heroLearnMoreBtn {
+        font-size: 1.2rem;
+        padding: 0.6rem;
     }
 }
