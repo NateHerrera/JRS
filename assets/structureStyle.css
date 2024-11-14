@@ -234,20 +234,35 @@ footer p {
     gap: 0.5rem;
 }
 
-.footerResources a {
+.contactDetails {
+    display: flex;
+    gap: 4rem;;
+}
+
+.ContactText {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footerResources a,
+.contactDetails a {
     width: fit-content;
     margin-left: 0.5rem;
+    margin-bottom: 0.5rem;
     color: lightgray;
     text-decoration: underline;
     text-underline-offset: 2px;
     font-size: small;
 }
 
-.footerResources a:hover {
+.footerResources a:hover,
+.contactDetails a:hover {
     color: white;
 }
 
-.footerResources p {
+.footerResources p,
+.contactDetails p {
     margin: 0;
 }
 
